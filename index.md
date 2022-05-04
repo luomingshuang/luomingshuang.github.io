@@ -35,3 +35,28 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+---
+pageClass: home-page
+# some data for the components
+
+name: Harry Potter
+profile: /profile.jpg
+
+socials:
+  - title: github
+    icon: "/icons/github.svg"
+    link: https://github.com/mtobeiyf
+  - title: linkedin
+    icon: "/icons/linkedin-mono.svg"
+    link: https://www.linkedin.com
+  - title: instagram
+    icon: "/icons/instagram-mono.svg"
+    link: https://www.instagram.com
+
+cv: https://en.wikipedia.org/wiki/Harry_Potter
+bio: Student at Hogwarts School
+email: harry (at) hogwarts (dot) edu
+---
+
+<ProfileSection :frontmatter="$page.frontmatter" />

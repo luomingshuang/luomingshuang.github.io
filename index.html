@@ -189,24 +189,12 @@
           <!-- News -->
           <heading>News</heading><br>
           <div class="news-container">
-            <table
-              style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-
-                <!-- <br> -->
-
-                <tr>
-                  <td style="padding:0px;width:100%;vertical-align:middle">
-                    <p>
-                    </p>
-                    <li>[2026/01] 🎉 <a href="https://arxiv.org/pdf/2601.13133">CLASP</a> was accepted by TMM
-                      2026.
-                    </li>
-                    <p></p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <!-- 移除多余表格，直接使用规范列表展示新闻，删除空p标签 -->
+            <ul style="width:100%;margin:0 auto;padding:0;list-style:none;">
+              <li style="padding:0px;width:100%;vertical-align:middle;">
+                [2026/01] 🎉 <a href="https://arxiv.org/pdf/2601.13133">CLASP</a> was accepted by TMM 2026.
+              </li>
+            </ul>
           </div>
           <script>
             const newsContainer = document.querySelector('.news-container');

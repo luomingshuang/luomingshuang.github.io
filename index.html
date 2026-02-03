@@ -189,12 +189,24 @@
           <!-- News -->
           <heading>News</heading><br>
           <div class="news-container">
-            <!-- 移除多余表格，直接使用规范列表展示新闻，删除空p标签 -->
-            <ul style="width:100%;margin:0 auto;padding:0;list-style:none;">
-              <li style="padding:0px;width:100%;vertical-align:middle;">
-                [2026/01] 🎉 <a href="https://arxiv.org/pdf/2601.13133">CLASP</a> was accepted by TMM 2026.
-              </li>
-            </ul>
+            <table
+              style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+
+                <!-- <br> -->
+
+                <tr>
+                  <td style="padding:0px;width:100%;vertical-align:middle">
+                    <p>
+                    </p>
+                    <li>[2026/01] 🎉 <a href="https://arxiv.org/pdf/2601.13133">CLASP</a> was accepted by TMM
+                      2026.
+                    </li>
+                    <p></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <script>
             const newsContainer = document.querySelector('.news-container');
@@ -213,10 +225,6 @@
           <br>
           <heading>Research</heading><br>
           <p>
-            My research interests are broadly in <strong>3D/2D Computer
-              Vision</strong> and <strong>Generative AI</strong>. My overarching research objective is to advance
-            AI-driven methods that <strong>augment and amplify human creativity</strong>. Everything related to AI is so fascinating that it has profoundly transformed the course of human development.
-
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>

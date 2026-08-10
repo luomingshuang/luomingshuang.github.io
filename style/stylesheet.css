@@ -109,7 +109,8 @@ strong {
   font-size: 14px;
 }
 
-heading {
+heading,
+.section-heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 25px;
   /*color: #313164;*/
@@ -127,13 +128,15 @@ heading2 {
   text-decoration-color: #fba524; /* #ac715b; */
 }
 
-papertitle {
+papertitle,
+.papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700
 }
 
-name {
+name,
+.name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 28px;
 }

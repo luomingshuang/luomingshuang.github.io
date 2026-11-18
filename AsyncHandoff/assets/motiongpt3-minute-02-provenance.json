@@ -1,0 +1,2281 @@
+{
+  "renderer_version": 6,
+  "display_ground_alignment": {
+    "method": "Two-bone leg IK for floor clearance; pelvis trajectory retained; bounded ankles; residual uniform clearance only; no vertex warping",
+    "max_absolute_adjustment_m": 0.01238873228430748,
+    "p95_frame_adjustment_step_m": 0.0007686614990234373,
+    "max_frame_adjustment_step_m": 0.007103085517883301,
+    "rendered_minimum_surface_y_m": 0.0020000000949949026,
+    "joint_mean_error_after_retarget_m": 0.03721420839428902
+  },
+  "provider": "MotionGPT3",
+  "case": 2,
+  "video": "motiongpt3-minute-02.mp4",
+  "sha256": "d1837eee52b6848ec3320e5a92478e4d238746101b7da251d147bfb19c6cc509",
+  "duration_s": 60,
+  "frames": 1200,
+  "fps": 20,
+  "source_directory": "research_v356_gpt3_semantic_minutes/motiongpt3/case02_attempt3",
+  "commands": [
+    {
+      "index": 0,
+      "text": "A person raises both arms overhead and stretches.",
+      "text_zh": "双臂向上举过头顶，伸展身体。",
+      "provider": "motiongpt3",
+      "seed": 1275200,
+      "issued_s": 0.00021249614655971527,
+      "errors": [],
+      "committed": true,
+      "target_ready_s": 0.25735509768128395,
+      "generation_s": 0.25698093697428703,
+      "native_target_exact": true,
+      "bridge_frames": 8,
+      "commit_s": 1.1409711204469204,
+      "entry_audit": {
+        "entered": true,
+        "full_target_appended": true,
+        "source_length": 120,
+        "played_target_frames_offline": 120,
+        "source_frame_indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127
+        ],
+        "target_native_byte_exact": true,
+        "FD_response_frames": 0,
+        "external_refresh_steps": 0,
+        "entry_bridge_frames": 8,
+        "exit_bridge_passed": true,
+        "entry_attempts": [
+          {
+            "response_frames": 0,
+            "gap": 4,
+            "style": "learned",
+            "entry": {
+              "passed": false,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": false,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": true,
+                "controlled_joint_acc_le25": false,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": false,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.0025876899249417953,
+                  "joint_step_m": 0.037230705102079376,
+                  "boundary_acceleration": 42.293763702618996,
+                  "median_acceleration": 0.4551729228177859
+                },
+                {
+                  "root_step_m": 0.03074098012689803,
+                  "joint_step_m": 0.023759998850666687,
+                  "boundary_acceleration": 42.293763702618996,
+                  "median_acceleration": 0.4551729228177859
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.021161425858736038,
+              "gap_slide": 0.12999840451132752,
+              "gap_bone_RMS": 0.004577722980329777,
+              "metrics": {
+                "jerk": 1237.8478015735293,
+                "joint_acc": 42.293763702618996,
+                "root_acc": 15.531421021555387,
+                "lowfoot_speed": 0.29330208595033475,
+                "bridge_min_joint_y": 0.021161425858736038
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": -0.02318355362770408,
+                  "XZ_offset": [
+                    0.059228379774140194,
+                    0.0,
+                    -0.04383161757141352
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 6.932752044663815e-08
+                }
+              }
+            }
+          },
+          {
+            "response_frames": 0,
+            "gap": 6,
+            "style": "learned",
+            "entry": {
+              "passed": false,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": false,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": true,
+                "controlled_joint_acc_le25": false,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": false,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.0018397186716149153,
+                  "joint_step_m": 0.023127919215962568,
+                  "boundary_acceleration": 28.893062271466444,
+                  "median_acceleration": 0.48869401808698604
+                },
+                {
+                  "root_step_m": 0.017865837632270867,
+                  "joint_step_m": 0.013903990945555434,
+                  "boundary_acceleration": 12.41512320312446,
+                  "median_acceleration": 0.48869401808698604
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.01701926812529564,
+              "gap_slide": 0.09491188205084126,
+              "gap_bone_RMS": 0.0046124522967842165,
+              "metrics": {
+                "jerk": 848.9852544364443,
+                "joint_acc": 28.893062271466444,
+                "root_acc": 11.554238772578348,
+                "lowfoot_speed": 0.16886147936879659,
+                "bridge_min_joint_y": 0.01701926812529564
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": -0.05173274646123538,
+                  "XZ_offset": [
+                    0.06319449518923648,
+                    0.0,
+                    -0.045747422613203526
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 6.047235295847386e-08
+                }
+              }
+            }
+          },
+          {
+            "response_frames": 0,
+            "gap": 8,
+            "style": "learned",
+            "entry": {
+              "passed": true,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": true,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": true,
+                "controlled_joint_acc_le25": true,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": true,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.0016397814916823416,
+                  "joint_step_m": 0.016885412696669124,
+                  "boundary_acceleration": 20.213542538698732,
+                  "median_acceleration": 0.49192385128888244
+                },
+                {
+                  "root_step_m": 0.011702924782047111,
+                  "joint_step_m": 0.009203825104873782,
+                  "boundary_acceleration": 8.537394839641912,
+                  "median_acceleration": 0.49192385128888244
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.014959920197725296,
+              "gap_slide": 0.11735786918757737,
+              "gap_bone_RMS": 0.0046297815941275045,
+              "metrics": {
+                "jerk": 572.8571300725108,
+                "joint_acc": 20.213542538698732,
+                "root_acc": 8.666385398832281,
+                "lowfoot_speed": 0.14053385249652833,
+                "bridge_min_joint_y": 0.014959920197725296
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": -0.08213909143238363,
+                  "XZ_offset": [
+                    0.0638755192339886,
+                    0.0,
+                    -0.043691069819033146
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 7.37601000833088e-08
+                }
+              }
+            }
+          }
+        ],
+        "exit_attempts": [],
+        "compute_wall_s": 1.0990975964814425,
+        "entry_ready_compute_s": 0.07347958721220493,
+        "online_latency_valid": false
+      },
+      "displayed_target_frames": 120,
+      "full_target": true,
+      "first_target_s": 2.8186129238456488,
+      "final_target_s": 8.7893326561898
+    },
+    {
+      "index": 1,
+      "text": "A person bows forward and returns upright.",
+      "text_zh": "上身向前弯腰鞠躬，再恢复直立。",
+      "provider": "motiongpt3",
+      "seed": 1275201,
+      "issued_s": 9.870328983291984,
+      "errors": [],
+      "committed": true,
+      "target_ready_s": 10.125235632061958,
+      "generation_s": 0.2544071953743696,
+      "native_target_exact": true,
+      "bridge_frames": 12,
+      "commit_s": 11.026482548564672,
+      "entry_audit": {
+        "entered": true,
+        "full_target_appended": true,
+        "source_length": 120,
+        "played_target_frames_offline": 120,
+        "source_frame_indices": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131
+        ],
+        "target_native_byte_exact": true,
+        "FD_response_frames": 0,
+        "external_refresh_steps": 0,
+        "entry_bridge_frames": 12,
+        "exit_bridge_passed": true,
+        "entry_attempts": [
+          {
+            "response_frames": 0,
+            "gap": 4,
+            "style": "learned",
+            "entry": {
+              "passed": false,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": true,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": false,
+                "controlled_joint_acc_le25": true,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": true,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.004761317969375599,
+                  "joint_step_m": 0.027692323216405225,
+                  "boundary_acceleration": 14.39920006021153,
+                  "median_acceleration": 0.32955935365086164
+                },
+                {
+                  "root_step_m": 0.020588297249115876,
+                  "joint_step_m": 0.0301765604558649,
+                  "boundary_acceleration": 12.345302854410203,
+                  "median_acceleration": 0.32955935365086164
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.01099950447678566,
+              "gap_slide": 0.7034264831862779,
+              "gap_bone_RMS": 0.003004335856046073,
+              "metrics": {
+                "jerk": 308.36279687405647,
+                "joint_acc": 14.39920006021153,
+                "root_acc": 8.164706792799125,
+                "lowfoot_speed": 0.5937158551174662,
+                "bridge_min_joint_y": 0.01099950447678566
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": 0.10760426103434462,
+                  "XZ_offset": [
+                    0.05680870433570817,
+                    0.0,
+                    -0.07411695184055134
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 7.439899873951106e-08
+                }
+              }
+            }
+          },
+          {
+            "response_frames": 0,
+            "gap": 6,
+            "style": "learned",
+            "entry": {
+              "passed": false,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": true,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": false,
+                "controlled_joint_acc_le25": true,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": true,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.00322747428396656,
+                  "joint_step_m": 0.014751033690146343,
+                  "boundary_acceleration": 8.921851228127325,
+                  "median_acceleration": 0.33168223105322714
+                },
+                {
+                  "root_step_m": 0.012898547726941543,
+                  "joint_step_m": 0.017350502444153156,
+                  "boundary_acceleration": 7.202730491161767,
+                  "median_acceleration": 0.33168223105322714
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.00916123017668724,
+              "gap_slide": 0.5102054408658627,
+              "gap_bone_RMS": 0.0030616140839074386,
+              "metrics": {
+                "jerk": 202.3684544201835,
+                "joint_acc": 8.921851228127325,
+                "root_acc": 5.362688656107112,
+                "lowfoot_speed": 0.43913221694553173,
+                "bridge_min_joint_y": 0.00916123017668724
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": 0.07763591218729005,
+                  "XZ_offset": [
+                    0.0586047739489004,
+                    0.0,
+                    -0.07546095834914013
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 1.0492618307544888e-07
+                }
+              }
+            }
+          },
+          {
+            "response_frames": 0,
+            "gap": 8,
+            "style": "learned",
+            "entry": {
+              "passed": false,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": true,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": false,
+                "controlled_joint_acc_le25": true,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": true,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.0029433288807590363,
+                  "joint_step_m": 0.009202531882131774,
+                  "boundary_acceleration": 6.269417324745902,
+                  "median_acceleration": 0.3334353948640669
+                },
+                {
+                  "root_step_m": 0.008831835498405381,
+                  "joint_step_m": 0.011284263757340018,
+                  "boundary_acceleration": 5.009581072415302,
+                  "median_acceleration": 0.3334353948640669
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.008139446377754211,
+              "gap_slide": 0.4027324766440183,
+              "gap_bone_RMS": 0.003089947716404899,
+              "metrics": {
+                "jerk": 155.07818680533302,
+                "joint_acc": 6.269417324745902,
+                "root_acc": 4.235414626152862,
+                "lowfoot_speed": 0.3542687615746613,
+                "bridge_min_joint_y": 0.008139446377754211
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": 0.04709659749505857,
+                  "XZ_offset": [
+                    0.061783625453244895,
+                    0.0,
+                    -0.08159544231239124
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 8.741406026802068e-08
+                }
+              }
+            }
+          },
+          {
+            "response_frames": 0,
+            "gap": 12,
+            "style": "learned",
+            "entry": {
+              "passed": true,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": true,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": true,
+                "controlled_joint_acc_le25": true,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": true,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.0031452844344160382,
+                  "joint_step_m": 0.007243653749717375,
+                  "boundary_acceleration": 4.7292469302811195,
+                  "median_acceleration": 0.3373522542502991
+                },
+                {
+                  "root_step_m": 0.005002136942427749,
+                  "joint_step_m": 0.0059177028920999125,
+                  "boundary_acceleration": 3.078263205599033,
+                  "median_acceleration": 0.3373522542502991
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.007118776440620422,
+              "gap_slide": 0.28965041861091245,
+              "gap_bone_RMS": 0.003118057093541517,
+              "metrics": {
+                "jerk": 115.92574993236032,
+                "joint_acc": 4.7292469302811195,
+                "root_acc": 3.355183400721513,
+                "lowfoot_speed": 0.26430044192128216,
+                "bridge_min_joint_y": 0.007118776440620422
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": -0.0162717894176736,
+                  "XZ_offset": [
+                    0.0696379411383532,
+                    0.0,
+                    -0.09997049631419941
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 6.360149906736723e-08
+                }
+              }
+            }
+          }
+        ],
+        "exit_attempts": [],
+        "compute_wall_s": 1.1227472014725208,
+        "entry_ready_compute_s": 0.0977939311414957,
+        "online_latency_valid": false
+      },
+      "displayed_target_frames": 120,
+      "full_target": true,
+      "first_target_s": 12.90071147494018,
+      "final_target_s": 18.869860721752048
+    },
+    {
+      "index": 2,
+      "text": "A person waves repeatedly with the left hand.",
+      "text_zh": "抬起左手，在身体左侧反复挥手示意。",
+      "provider": "motiongpt3",
+      "seed": 1275202,
+      "issued_s": 19.945842815563083,
+      "errors": [],
+      "committed": true,
+      "target_ready_s": 20.200848737731576,
+      "generation_s": 0.2544915918260813,
+      "native_target_exact": true,
+      "bridge_frames": 4,
+      "commit_s": 21.020076675340533,
+      "entry_audit": {
+        "entered": true,
+        "full_target_appended": true,
+        "source_length": 120,
+        "played_target_frames_offline": 120,
+        "source_frame_indices": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123
+        ],
+        "target_native_byte_exact": true,
+        "FD_response_frames": 0,
+        "external_refresh_steps": 0,
+        "entry_bridge_frames": 4,
+        "exit_bridge_passed": true,
+        "entry_attempts": [
+          {
+            "response_frames": 0,
+            "gap": 4,
+            "style": "learned",
+            "entry": {
+              "passed": true,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": true,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": true,
+                "controlled_joint_acc_le25": true,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": true,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.0033939978110554456,
+                  "joint_step_m": 0.01871242078671255,
+                  "boundary_acceleration": 12.646323445834726,
+                  "median_acceleration": 1.0299483157980451
+                },
+                {
+                  "root_step_m": 0.012467536961342812,
+                  "joint_step_m": 0.016657161222404727,
+                  "boundary_acceleration": 12.646323445834726,
+                  "median_acceleration": 1.0299483157980451
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.010275021195411682,
+              "gap_slide": 0.2054242754203387,
+              "gap_bone_RMS": 0.0025721530142872877,
+              "metrics": {
+                "jerk": 365.1298718667415,
+                "joint_acc": 12.646323445834726,
+                "root_acc": 12.548110638159182,
+                "lowfoot_speed": 0.19299180806600727,
+                "bridge_min_joint_y": 0.010275021195411682
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": 6.243831924741526,
+                  "XZ_offset": [
+                    0.05975026451051235,
+                    0.0,
+                    -0.24346901900935336
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 8.550191399336882e-08
+                }
+              }
+            }
+          }
+        ],
+        "exit_attempts": [],
+        "compute_wall_s": 1.035943664610386,
+        "entry_ready_compute_s": 0.025374047458171844,
+        "online_latency_valid": false
+      },
+      "displayed_target_frames": 120,
+      "full_target": true,
+      "first_target_s": 22.57514388486743,
+      "final_target_s": 28.536857737228274
+    },
+    {
+      "index": 3,
+      "text": "A person turns left and walks forward.",
+      "text_zh": "向左转身，再向前迈步。",
+      "provider": "motiongpt3",
+      "seed": 1275203,
+      "issued_s": 29.618216456845403,
+      "errors": [],
+      "committed": true,
+      "target_ready_s": 29.872717132791877,
+      "generation_s": 0.2539049983024597,
+      "native_target_exact": true,
+      "bridge_frames": 24,
+      "commit_s": 30.813887398689985,
+      "entry_audit": {
+        "entered": true,
+        "full_target_appended": true,
+        "source_length": 120,
+        "played_target_frames_offline": 120,
+        "source_frame_indices": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143
+        ],
+        "target_native_byte_exact": true,
+        "FD_response_frames": 0,
+        "external_refresh_steps": 0,
+        "entry_bridge_frames": 24,
+        "exit_bridge_passed": true,
+        "entry_attempts": [
+          {
+            "response_frames": 0,
+            "gap": 4,
+            "style": "learned",
+            "entry": {
+              "passed": false,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": false,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": false,
+                "controlled_joint_acc_le25": false,
+                "controlled_root_acc_le25": false,
+                "controlled_joint_jerk_le800": true,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.04464982430159814,
+                  "joint_step_m": 0.035163371996018454,
+                  "boundary_acceleration": 32.67403675631029,
+                  "median_acceleration": 2.1305459973545657
+                },
+                {
+                  "root_step_m": 0.03918472813704426,
+                  "joint_step_m": 0.0411783700477802,
+                  "boundary_acceleration": 19.122717430032427,
+                  "median_acceleration": 2.1305459973545657
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.019028153270483017,
+              "gap_slide": 2.1494758054541645,
+              "gap_bone_RMS": 0.0035256154613049506,
+              "metrics": {
+                "jerk": 734.6464048413327,
+                "joint_acc": 32.67403675631029,
+                "root_acc": 36.43470325793178,
+                "lowfoot_speed": 1.9722455419923972,
+                "bridge_min_joint_y": 0.019028153270483017
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": -5.38315999609868,
+                  "XZ_offset": [
+                    -0.2577733127400279,
+                    0.0,
+                    0.03917490819367231
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 5.55512168487482e-07
+                }
+              }
+            }
+          },
+          {
+            "response_frames": 0,
+            "gap": 6,
+            "style": "learned",
+            "entry": {
+              "passed": false,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": true,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": false,
+                "controlled_joint_acc_le25": true,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": true,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.04227707947828289,
+                  "joint_step_m": 0.03288659029971846,
+                  "boundary_acceleration": 23.837145316341626,
+                  "median_acceleration": 2.142819745758283
+                },
+                {
+                  "root_step_m": 0.025733488733124622,
+                  "joint_step_m": 0.028668798764454342,
+                  "boundary_acceleration": 7.660635611891624,
+                  "median_acceleration": 2.142819745758283
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.017199072986841202,
+              "gap_slide": 1.4735444832662978,
+              "gap_bone_RMS": 0.0035547630357107333,
+              "metrics": {
+                "jerk": 462.48197595014665,
+                "joint_acc": 23.837145316341626,
+                "root_acc": 24.433802926765843,
+                "lowfoot_speed": 1.3872876476380716,
+                "bridge_min_joint_y": 0.017199072986841202
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": -5.329086079670791,
+                  "XZ_offset": [
+                    -0.29398668091744184,
+                    0.0,
+                    0.06876652816208662
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 3.6460361774182104e-07
+                }
+              }
+            }
+          },
+          {
+            "response_frames": 0,
+            "gap": 8,
+            "style": "learned",
+            "entry": {
+              "passed": false,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": true,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": false,
+                "controlled_joint_acc_le25": true,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": true,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.04183863515989851,
+                  "joint_step_m": 0.03426632877186482,
+                  "boundary_acceleration": 17.703004956128623,
+                  "median_acceleration": 2.1976221838438765
+                },
+                {
+                  "root_step_m": 0.018282999967340948,
+                  "joint_step_m": 0.021645640385219007,
+                  "boundary_acceleration": 5.112858942390621,
+                  "median_acceleration": 2.1976221838438765
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.016302689909934998,
+              "gap_slide": 1.1078085322679971,
+              "gap_bone_RMS": 0.003569301004718447,
+              "metrics": {
+                "jerk": 358.44661903126223,
+                "joint_acc": 17.703004956128623,
+                "root_acc": 17.978616620526868,
+                "lowfoot_speed": 1.0637563646700392,
+                "bridge_min_joint_y": 0.016302689909934998
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": -5.277293464107417,
+                  "XZ_offset": [
+                    -0.3548701433464885,
+                    0.0,
+                    0.11163898685845197
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 4.7390322466256407e-07
+                }
+              }
+            }
+          },
+          {
+            "response_frames": 0,
+            "gap": 12,
+            "style": "learned",
+            "entry": {
+              "passed": false,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": true,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": false,
+                "controlled_joint_acc_le25": true,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": true,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.041970738581988375,
+                  "joint_step_m": 0.036015634564511984,
+                  "boundary_acceleration": 11.638212850663383,
+                  "median_acceleration": 2.130546145427661
+                },
+                {
+                  "root_step_m": 0.0119612451675045,
+                  "joint_step_m": 0.015642177770927003,
+                  "boundary_acceleration": 3.49421854418133,
+                  "median_acceleration": 2.130546145427661
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.01546887680888176,
+              "gap_slide": 0.7330964713867689,
+              "gap_bone_RMS": 0.003583792301403049,
+              "metrics": {
+                "jerk": 255.33583594850367,
+                "joint_acc": 11.638212850663383,
+                "root_acc": 11.860543383003959,
+                "lowfoot_speed": 0.723505165793333,
+                "bridge_min_joint_y": 0.01546887680888176
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": -5.180188446216099,
+                  "XZ_offset": [
+                    -0.48473248165100813,
+                    0.0,
+                    0.19577457884224714
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 5.604677262294189e-07
+                }
+              }
+            }
+          },
+          {
+            "response_frames": 0,
+            "gap": 16,
+            "style": "learned",
+            "entry": {
+              "passed": false,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": true,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": false,
+                "controlled_joint_acc_le25": true,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": true,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.042211768153015,
+                  "joint_step_m": 0.03685456972069292,
+                  "boundary_acceleration": 9.099682168585714,
+                  "median_acceleration": 2.0109172920937195
+                },
+                {
+                  "root_step_m": 0.009892999366583567,
+                  "joint_step_m": 0.013637430459388245,
+                  "boundary_acceleration": 3.4174305766617654,
+                  "median_acceleration": 2.0109172920937195
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.015100806951522827,
+              "gap_slide": 0.37273079129877873,
+              "gap_bone_RMS": 0.0035910208994615477,
+              "metrics": {
+                "jerk": 211.63040367332505,
+                "joint_acc": 9.099682168585714,
+                "root_acc": 9.308804251783998,
+                "lowfoot_speed": 0.3961451079804085,
+                "bridge_min_joint_y": 0.015100806951522827
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": -5.091380747258743,
+                  "XZ_offset": [
+                    -0.5575620857998729,
+                    0.0,
+                    0.24087926128777326
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 6.387976121402517e-07
+                }
+              }
+            }
+          },
+          {
+            "response_frames": 0,
+            "gap": 24,
+            "style": "learned",
+            "entry": {
+              "passed": true,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": true,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": true,
+                "controlled_joint_acc_le25": true,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": true,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.04251309896371653,
+                  "joint_step_m": 0.03761077134020441,
+                  "boundary_acceleration": 7.141402479026576,
+                  "median_acceleration": 1.9942382443082065
+                },
+                {
+                  "root_step_m": 0.00884057897012625,
+                  "joint_step_m": 0.012535572324915477,
+                  "boundary_acceleration": 3.7389870156879836,
+                  "median_acceleration": 1.9942382443082065
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.014785666018724442,
+              "gap_slide": 0.2240350307393051,
+              "gap_bone_RMS": 0.0035982325975159202,
+              "metrics": {
+                "jerk": 177.9759690586395,
+                "joint_acc": 7.141402479026576,
+                "root_acc": 7.3494316955411785,
+                "lowfoot_speed": 0.25126631150111023,
+                "bridge_min_joint_y": 0.014785666018724442
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": -4.938763063957186,
+                  "XZ_offset": [
+                    -0.5922527639195323,
+                    0.0,
+                    0.26381110528382123
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 4.5082493249637423e-07
+                }
+              }
+            }
+          }
+        ],
+        "exit_attempts": [],
+        "compute_wall_s": 1.156664825975895,
+        "entry_ready_compute_s": 0.1471358109265566,
+        "online_latency_valid": false
+      },
+      "displayed_target_frames": 120,
+      "full_target": true,
+      "first_target_s": 33.24961934797466,
+      "final_target_s": 39.212111392989755
+    },
+    {
+      "index": 4,
+      "text": "A person walks forward with natural arm swings.",
+      "text_zh": "向前稳步行走，双臂自然交替摆动。",
+      "provider": "motiongpt3",
+      "seed": 1275204,
+      "issued_s": 40.28974581323564,
+      "errors": [],
+      "committed": true,
+      "target_ready_s": 40.5458267852664,
+      "generation_s": 0.2554765846580267,
+      "native_target_exact": true,
+      "bridge_frames": 24,
+      "commit_s": 41.4866549000144,
+      "entry_audit": {
+        "entered": true,
+        "full_target_appended": true,
+        "source_length": 120,
+        "played_target_frames_offline": 120,
+        "source_frame_indices": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143
+        ],
+        "target_native_byte_exact": true,
+        "FD_response_frames": 0,
+        "external_refresh_steps": 0,
+        "entry_bridge_frames": 24,
+        "exit_bridge_passed": true,
+        "entry_attempts": [
+          {
+            "response_frames": 0,
+            "gap": 4,
+            "style": "learned",
+            "entry": {
+              "passed": false,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": true,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": false,
+                "controlled_joint_acc_le25": true,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": true,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.05021485960214424,
+                  "joint_step_m": 0.05383286590413376,
+                  "boundary_acceleration": 15.206565999492055,
+                  "median_acceleration": 3.2751453718334953
+                },
+                {
+                  "root_step_m": 0.007629755054464268,
+                  "joint_step_m": 0.017792957107379683,
+                  "boundary_acceleration": 11.452003998653456,
+                  "median_acceleration": 3.2751453718334953
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.021976850926876068,
+              "gap_slide": 0.9087283587034067,
+              "gap_bone_RMS": 0.0035393284504620552,
+              "metrics": {
+                "jerk": 341.5140115513397,
+                "joint_acc": 15.206565999492055,
+                "root_acc": 15.624337584291688,
+                "lowfoot_speed": 0.8423845035494452,
+                "bridge_min_joint_y": 0.021976850926876068
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": 2.2891182366367793,
+                  "XZ_offset": [
+                    -1.4474525162950158,
+                    0.0,
+                    -2.750011921274563
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 2.4494465815649846e-06
+                }
+              }
+            }
+          },
+          {
+            "response_frames": 0,
+            "gap": 6,
+            "style": "learned",
+            "entry": {
+              "passed": false,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": true,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": false,
+                "controlled_joint_acc_le25": true,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": true,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.04942216164875135,
+                  "joint_step_m": 0.0507307780745443,
+                  "boundary_acceleration": 10.953108772240832,
+                  "median_acceleration": 3.3266028635515137
+                },
+                {
+                  "root_step_m": 0.00616089451036946,
+                  "joint_step_m": 0.011903677293715042,
+                  "boundary_acceleration": 7.962886552947942,
+                  "median_acceleration": 3.3266028635515137
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.01743217185139656,
+              "gap_slide": 0.622473386193674,
+              "gap_bone_RMS": 0.0036089151018200913,
+              "metrics": {
+                "jerk": 297.7753564262414,
+                "joint_acc": 9.885321630462915,
+                "root_acc": 12.630798797181653,
+                "lowfoot_speed": 0.5856403970631097,
+                "bridge_min_joint_y": 0.01743217185139656
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": 2.2616377945754125,
+                  "XZ_offset": [
+                    -1.458925218321383,
+                    0.0,
+                    -2.774463415491482
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 1.2886448743643086e-06
+                }
+              }
+            }
+          },
+          {
+            "response_frames": 0,
+            "gap": 8,
+            "style": "learned",
+            "entry": {
+              "passed": false,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": true,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": false,
+                "controlled_joint_acc_le25": true,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": true,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.04918101219734452,
+                  "joint_step_m": 0.0500192007060648,
+                  "boundary_acceleration": 10.953108772240832,
+                  "median_acceleration": 3.32659551007644
+                },
+                {
+                  "root_step_m": 0.005653601587722638,
+                  "joint_step_m": 0.010049986217842465,
+                  "boundary_acceleration": 6.712895570271287,
+                  "median_acceleration": 3.32659551007644
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.01505257561802864,
+              "gap_slide": 0.39784679961515723,
+              "gap_bone_RMS": 0.0036433176326506316,
+              "metrics": {
+                "jerk": 290.8563180751159,
+                "joint_acc": 6.712895570271287,
+                "root_acc": 9.23767549176114,
+                "lowfoot_speed": 0.3968007929420998,
+                "bridge_min_joint_y": 0.01505257561802864
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": 2.231917497604293,
+                  "XZ_offset": [
+                    -1.4642831394448876,
+                    0.0,
+                    -2.788277566778561
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 1.042342953283537e-06
+                }
+              }
+            }
+          },
+          {
+            "response_frames": 0,
+            "gap": 12,
+            "style": "learned",
+            "entry": {
+              "passed": false,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": true,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": false,
+                "controlled_joint_acc_le25": true,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": true,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.04909622232578868,
+                  "joint_step_m": 0.05028091962705652,
+                  "boundary_acceleration": 10.953108772240832,
+                  "median_acceleration": 3.2707870581470164
+                },
+                {
+                  "root_step_m": 0.005902074470281449,
+                  "joint_step_m": 0.009571084633275198,
+                  "boundary_acceleration": 4.508262211663546,
+                  "median_acceleration": 3.2707870581470164
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.012748613953590393,
+              "gap_slide": 0.30301176430749927,
+              "gap_bone_RMS": 0.0036774496646400697,
+              "metrics": {
+                "jerk": 282.4488814137383,
+                "joint_acc": 5.88617077962692,
+                "root_acc": 6.129820662649834,
+                "lowfoot_speed": 0.3060072509710361,
+                "bridge_min_joint_y": 0.012748613953590393
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": 2.1655713243040737,
+                  "XZ_offset": [
+                    -1.4687070259824395,
+                    0.0,
+                    -2.8043169382690394
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 1.3725692618038465e-06
+                }
+              }
+            }
+          },
+          {
+            "response_frames": 0,
+            "gap": 16,
+            "style": "learned",
+            "entry": {
+              "passed": false,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": true,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": false,
+                "controlled_joint_acc_le25": true,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": true,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.04913327287692328,
+                  "joint_step_m": 0.050834512295284864,
+                  "boundary_acceleration": 10.953108772240832,
+                  "median_acceleration": 3.2043768396433365
+                },
+                {
+                  "root_step_m": 0.006583197038007345,
+                  "joint_step_m": 0.009992411090102123,
+                  "boundary_acceleration": 3.378728551069248,
+                  "median_acceleration": 3.2043768396433365
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.011682167649269104,
+              "gap_slide": 0.3159245146134448,
+              "gap_bone_RMS": 0.003694402537912487,
+              "metrics": {
+                "jerk": 277.69586233929425,
+                "joint_acc": 6.030777303401691,
+                "root_acc": 5.18297364578847,
+                "lowfoot_speed": 0.3140260024104254,
+                "bridge_min_joint_y": 0.011682167649269104
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": 2.089878404800074,
+                  "XZ_offset": [
+                    -1.4708231994882226,
+                    0.0,
+                    -2.8153042796730006
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 3.0597947606736398e-06
+                }
+              }
+            }
+          },
+          {
+            "response_frames": 0,
+            "gap": 24,
+            "style": "learned",
+            "entry": {
+              "passed": true,
+              "checks": {
+                "finite": true,
+                "foot_above_minus1cm": true,
+                "root_boundary_step_le10cm": true,
+                "boundary_acc_le25": true,
+                "gap_bone_RMS_le2cm": true,
+                "lowfoot_slide_le_point3": true,
+                "controlled_joint_acc_le25": true,
+                "controlled_root_acc_le25": true,
+                "controlled_joint_jerk_le800": true,
+                "all_bridge_joints_above_minus1cm": true
+              },
+              "seams": [
+                {
+                  "root_step_m": 0.0492414395613327,
+                  "joint_step_m": 0.051709893597572915,
+                  "boundary_acceleration": 10.953108772240832,
+                  "median_acceleration": 3.069042444789305
+                },
+                {
+                  "root_step_m": 0.007826921805803225,
+                  "joint_step_m": 0.01102578728491402,
+                  "boundary_acceleration": 2.518221526720546,
+                  "median_acceleration": 3.069042444789305
+                }
+              ],
+              "content_verified": false,
+              "placement": null,
+              "gap_minfoot": 0.010714076459407806,
+              "gap_slide": 0.2789062043141223,
+              "gap_bone_RMS": 0.0037112776686660616,
+              "metrics": {
+                "jerk": 272.7506544505121,
+                "joint_acc": 6.282121952841212,
+                "root_acc": 5.28550253438866,
+                "lowfoot_speed": 0.28333873786095765,
+                "bridge_min_joint_y": 0.010714076459407806
+              },
+              "source_lock": {
+                "checks": {
+                  "target_length_exact": true,
+                  "target_native_exact": true,
+                  "target_SE2_only": true
+                },
+                "passed": true,
+                "placement": {
+                  "yaw": 1.910056707671543,
+                  "XZ_offset": [
+                    -1.4759434470906854,
+                    0.0,
+                    -2.835328221666714
+                  ],
+                  "implied_Y_offset": 0.0,
+                  "world_SE2_max_error": 1.9278817617873756e-06
+                }
+              }
+            }
+          }
+        ],
+        "exit_attempts": [],
+        "compute_wall_s": 1.1612155996263027,
+        "entry_ready_compute_s": 0.14708521030843258,
+        "online_latency_valid": false
+      },
+      "displayed_target_frames": 120,
+      "full_target": true,
+      "first_target_s": 43.92463060468435,
+      "final_target_s": 49.8860870487988
+    }
+  ],
+  "all_targets_full": true,
+  "unserved_s": 0.0,
+  "native_targets_unchanged": true,
+  "rotation_audit": {
+    "neck": {
+      "p95_frame_deg": 1.4201828763395266,
+      "max_frame_deg": 4.405503752327168
+    },
+    "hips": {
+      "p95_frame_deg": 5.393006510561667,
+      "max_frame_deg": 19.79209356322654
+    },
+    "knees": {
+      "p95_frame_deg": 7.811267334887653,
+      "max_frame_deg": 35.377381388130026
+    },
+    "elbows": {
+      "p95_frame_deg": 4.785099763870164,
+      "max_frame_deg": 12.914939215825743
+    },
+    "wrists": {
+      "p95_frame_deg": 0.0,
+      "max_frame_deg": 0.0
+    },
+    "ankles": {
+      "p95_frame_deg": 5.110760323738675,
+      "max_frame_deg": 23.926599283188843
+    }
+  },
+  "surface": {
+    "frames": 1200,
+    "fixed_neutral_shape": true,
+    "source_motion_unchanged": true,
+    "method": "Twist-resolved skeletal IK; anatomical torso, neck and foot frames; neutral distal hands/head; bounded limb fitting; SO(3) display filtering followed by fresh skinning",
+    "max_limb_correction_rad": 0.12,
+    "rotation_prior_weight": 0.002,
+    "mean_joint_fit_error_m": 0.03721420839428902,
+    "p95_joint_fit_error_m": 0.09517865031957626,
+    "max_joint_fit_error_m": 0.3204716444015503,
+    "body_frames_temporally_regularized": true,
+    "display_position_filter": {
+      "window": 7,
+      "order": 2
+    },
+    "display_rotation_filter": {
+      "weights": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.2,
+        0.1,
+        0.05
+      ],
+      "passes": 2
+    },
+    "no_contact_repair": false,
+    "anatomical_display_bounds": true,
+    "neck_cone_rad": 0.85,
+    "ankle_cone_rad": 1.05,
+    "neutral_head_wrists_fingers": true,
+    "hinge_knees_elbows": true,
+    "scope": "Display retargeting only. Native motion features, source joints and original timing retained. Not an experimental motion-quality improvement.",
+    "display_only_contact_ik": true,
+    "source_contacts_unchanged": true,
+    "contact_ik": "Source-ankle two-link IK with pelvis-aligned anatomical knee poles, strictly one-axis knees, bounded ankles and floor clearance; no vertex warping",
+    "max_residual_root_clearance_m": 0.01238873228430748,
+    "rendered_minimum_y": 0.0020000000949949026
+  },
+  "configuration": {
+    "texts": [
+      "A person raises both arms overhead and stretches.",
+      "A person bows forward and returns upright.",
+      "A person waves repeatedly with the left hand.",
+      "A person turns left and walks forward.",
+      "A person walks forward with natural arm swings."
+    ],
+    "seeds": [
+      1275200,
+      1275201,
+      1275202,
+      1275203,
+      1275204
+    ],
+    "duration_s": 60,
+    "fps": 20,
+    "persistent_player": true,
+    "target_frames": 120,
+    "checkpoint_sha256": "c49b0d746f61173f14299a873ac5aa9cbe4f962574defa2e12b8f2babca81a20",
+    "selected_prompts_and_seeds_from_earlier_qualitative_candidates": true,
+    "source_selection": "Separate new-demo geometric candidate screen before playback; all candidates retained; visual semantics still require review",
+    "demo_streaming_screen": "Report-only raw streaming refills; entry gates unchanged; separate qualitative demo configuration",
+    "provider": "motiongpt3",
+    "provider_steps": null,
+    "chinese_instructions": [
+      "双臂向上举过头顶，伸展身体。",
+      "上身向前弯腰鞠躬，再恢复直立。",
+      "抬起左手，在身体左侧反复挥手示意。",
+      "向左转身，再向前迈步。",
+      "向前稳步行走，双臂自然交替摆动。"
+    ],
+    "provider_language": "English translation of Chinese instruction",
+    "fresh_generation": true,
+    "postroll_frames": 16,
+    "response_packet_frames": 8,
+    "prefill_frames": 24,
+    "future_queue_min": 24,
+    "new_command_prefix_limit": 24,
+    "observe_entry_compute_only": true,
+    "unrelated_provider_warmup": true,
+    "final_postroll_prefetch_floor": 128,
+    "nonfinal_prefetch_floor": 128,
+    "new_command_retained_unowned_prefix": 24,
+    "streaming_refill_seed_advances": true,
+    "entry_refresh_after_rejection": true,
+    "no_frozen_experiments_modified": true,
+    "post_commands_queue_floor": 128,
+    "registered_instruction_count": 5,
+    "target_frames_per_instruction": [
+      120,
+      120,
+      120,
+      120,
+      120
+    ],
+    "streaming_refill_screen": "report-only",
+    "native_targets_unchanged": true
+  },
+  "scope": "Selected qualitative demonstration. 5 complete targets on one continuous player. Display-only position/rotation smoothing, anatomical reconstruction and floor retargeting; raw native features, ownership and actual timing retained. No within-action cuts, speedup, or benchmark updates.",
+  "language": "Chinese authored instructions with actual English model-input translations; not a native Chinese-language benchmark",
+  "visual_review": "pending",
+  "review": {
+    "provider": "motiongpt3",
+    "case": 2,
+    "export": "motiongpt3-02-v356",
+    "approved": true,
+    "reviewed_semantics": true,
+    "reviewed_articulation": true,
+    "reviewed_seams": true,
+    "review_method": "Full-trace numerical articulation and ownership checks; visual inspection of target progressions, critical-motion and transition contact sheets."
+  },
+  "original_registration": {
+    "texts": [
+      "A person raises both arms overhead and stretches.",
+      "A person bows forward and returns upright.",
+      "A person waves repeatedly with the left hand.",
+      "A person turns left and walks forward.",
+      "A person walks forward with natural arm swings."
+    ],
+    "seeds": [
+      1275200,
+      1275201,
+      1275202,
+      1275203,
+      1275204
+    ],
+    "duration_s": 60,
+    "fps": 20,
+    "persistent_player": true,
+    "target_frames": 120,
+    "checkpoint_sha256": "c49b0d746f61173f14299a873ac5aa9cbe4f962574defa2e12b8f2babca81a20",
+    "selected_prompts_and_seeds_from_earlier_qualitative_candidates": true,
+    "source_selection": "Separate new-demo geometric candidate screen before playback; all candidates retained; visual semantics still require review",
+    "demo_streaming_screen": "Report-only raw streaming refills; entry gates unchanged; separate qualitative demo configuration",
+    "provider": "motiongpt3",
+    "provider_steps": null,
+    "chinese_instructions": [
+      "双臂向上举过头顶，伸展身体。",
+      "上身向前弯腰鞠躬，再恢复直立。",
+      "抬起左手，在身体左侧反复挥手示意。",
+      "向左转身，再向前迈步。",
+      "向前稳步行走，双臂自然交替摆动。"
+    ],
+    "provider_language": "English translation of Chinese instruction",
+    "fresh_generation": true,
+    "postroll_frames": 16,
+    "response_packet_frames": 8,
+    "prefill_frames": 24,
+    "future_queue_min": 24,
+    "new_command_prefix_limit": 24,
+    "observe_entry_compute_only": true,
+    "unrelated_provider_warmup": true,
+    "final_postroll_prefetch_floor": 64,
+    "nonfinal_prefetch_floor": 128,
+    "new_command_retained_unowned_prefix": 24,
+    "streaming_refill_seed_advances": true,
+    "entry_refresh_after_rejection": true,
+    "no_frozen_experiments_modified": true
+  },
+  "configuration_note": "Effective settings from the retained driver and actual events; original registration is preserved separately, including legacy labels."
+}

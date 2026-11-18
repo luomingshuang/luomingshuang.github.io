@@ -3,7 +3,7 @@
   "steps": 50,
   "guidance": 7.5,
   "file": "compound-chinese-salad.mp4",
-  "sha256": "32a813b1481e84182392d581a9667d03e40aa41c1493f75f696491be9fe2c4c8",
+  "sha256": "824cae3ed025e78a020ed534e476088987d58d22451d97f1de186ab0d20b6599",
   "frames": 1203,
   "fps": 20,
   "duration_s": 60.15,
@@ -3206,8 +3206,9 @@
       }
     ],
     "selection": "First two consecutive complete targets from the same four-instruction recording; an uncut temporal prefix, no within-action editing or speed changes. Subsequent candidates are retained in the full recording but are not selected as semantic showcase cases.",
-    "selected_sha256": "2bc6d6783b22e518ab760caad98597b336b0d6d79281bd1e6f07f084c2ef1186",
+    "selected_sha256": "97d6edc8f3e4c467129398beacee5dc07421e53eed476775c45f082d2abfd90d",
     "full_recording_retained": true,
     "full_file": "compound-chinese-salad.mp4"
-  }
+  },
+  "instruction_labels": "Latest issued instruction; queued history may precede current target readiness and entry."
 }

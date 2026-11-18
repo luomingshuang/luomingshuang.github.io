@@ -834,7 +834,8 @@
         ],
         "outlier_interpolation": "SO(3) interpolation of fitted local rotations between nearest non-outlier fits, then bounds; original source joints unchanged"
       },
-      "sha256": "f17b788ae3be286da2b4ecf460fac1b7ad8d729777cd43e443823d9de76e9d40"
+      "sha256": "31c3d8d6c829b73111cdbfb5c7d5efcb508ab08fb9aff1a8a511f9c2e28b7092",
+      "instruction_labels": "Latest issued instruction, including while queued previous continuation plays; no claim that the current target has already completed."
     }
   },
   "default_visualization": "anatomy_stabilized",

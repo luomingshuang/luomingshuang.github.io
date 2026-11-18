@@ -16,3 +16,7 @@ The regularized fit uses fixed neutral body shape and fixed hand pose, 128-frame
 `motivation.webp` and `framework.webp` are the current manuscript figures. `supplementary.pdf` supplies derivations, execution details, additional controls and evidence scope. All pre-existing experiment numbers and original media are retained.
 
 The default additionally bounds neck, knee, elbow and ankle rotations and holds unobserved distal head, wrist and toe rotations neutral. Seven isolated fitted outliers are replaced by bounded SO(3) interpolation from adjacent reliable fits; their source-frame indices are listed in the provenance. This is mesh visualization processing only.
+
+## Compound Chinese-instruction cases
+
+The additional SALAD demonstration uses 50 sampling steps and guidance 7.5. Chinese requests are accompanied by the actual English translations supplied to both generators; it is not a native Chinese-language evaluation. `compound-chinese-selected.mp4` is the first 25.05 seconds of a single four-command run, preserving two consecutive full targets without within-action cuts or speed changes. `compound-chinese-salad.mp4` retains the full recording, including subsequent candidates that were not selected as semantic showcase examples. `compound-provenance.json` records all four original instructions, timings, settings, selection and visualization processing. All four targets were delivered in the recorded run, but delivery does not establish that every requested subaction was followed accurately.

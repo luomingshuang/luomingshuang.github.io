@@ -1,40 +1,34 @@
 # Project media
 
-## Current continuous-motion gallery
+Everything shown on the project page is rendered **after de-jittering and anatomical IK** (the postprocessing stage released with the code). Native motion records are kept next to each video for inspection.
 
-The current gallery contains **15 selected 60-second recordings**: five each from SALAD, MotionHiFlow and MotionGPT3. Each recording uses one persistent player and successive instructions. Chinese requests are accompanied by the English prompts actually supplied to the models.
+## Gallery — fifteen one-minute recordings
 
-- `fifteen-motion-studies.json`: all selected cases, instructions, timing and hashes.
-- `<provider>-minute-<id>.mp4`: complete 60-second visualization.
-- `<provider>-minute-<id>-raw.zip`: original native motion, target arrays and timing records.
-- `<provider>-minute-<id>-provenance.json`: effective demo configuration, display processing and review.
-- `candidate-outcomes.json` and `demo-candidate-records.zip`: completed unsuccessful and unselected candidate outcomes.
-- `display-reconstruction-source.zip`: exact reconstruction/rendering source, with original host paths retained.
+Five recordings each for SALAD, MotionHiFlow and MotionGPT3. Each recording is one persistent 20 Hz player running for 60 s with successive instructions; every target is played in full (70/70) with 0.0 s of unserved playback.
 
-The display uses anatomical SMPL-H retargeting, temporal filtering and two-bone foot-clearance IK. This prevents reconstruction artifacts from being mistaken for the generated skeleton. It is display postprocessing, **not a measurement of unprocessed motion quality**. Native target features and their frame order are unchanged in the raw records. Selected qualitative controller settings are recorded separately from all frozen benchmark experiments. The cases are independent examples, not a matched comparison of the providers or a native Chinese-language benchmark.
+| File | Contents |
+| :-- | :-- |
+| `gallery.json` | Compact index used by the page: instructions, timing, bridge lengths and file names. |
+| `fifteen-motion-studies.json` | Full case list with instructions, timing and hashes. |
+| `<provider>-minute-<id>.mp4` | 60-second postprocessed video. |
+| `<provider>-minute-<id>-poster.webp` | Poster frame. |
+| `<provider>-minute-<id>-raw.zip` | Native motion, target arrays and timing records (unprocessed data). |
+| `<provider>-minute-<id>-provenance.json` | Effective configuration, display-processing settings, fitting diagnostics and review. |
+| `hero-trio.mp4` / `hero-trio-poster.webp` | Page teaser: unedited 4–24 s excerpts of SALAD-03, MotionHiFlow-02 and MotionGPT3-05, cropped and placed side by side. |
+| `candidate-outcomes.json`, `demo-candidate-records.zip` | All 56 completed candidate runs, including unselected and unsuccessful ones. |
+| `display-reconstruction-source.zip` | Reconstruction and rendering source. |
 
-## Archived visualizations
+## Display postprocessing
 
-Earlier previews below are retained for traceability and are not the current gallery. Their historical diagnostic values refer to those particular fits.
+1. Savitzky–Golay de-jittering of joint trajectories (window 7, order 2).
+2. Twist-resolved local rotations with bounded SMPL-H limb fitting (≤ 0.12 rad).
+3. Two passes of 7-tap relative-rotation smoothing on SO(3).
+4. Anatomical bounds: neck/ankle cones (0.85/1.05 rad), hinge knees and elbows, neutral head/wrists/fingers.
+5. Two-bone leg IK toward the source ankles with residual floor clearance, then fresh skinning (no vertex warping).
 
+This is an output stage only. Native target features, frame order, ownership and timestamps are unchanged; nothing is fed back into the generators, admission checks or reported metrics. Mean display deviation from the source joints is 3.8–4.3 cm per provider. The recordings are qualitative examples, separate from the frozen benchmark, and not a matched comparison of providers or a native Chinese-language evaluation.
 
-Paper figures and supplementary material accompany a selected continuous multi-instruction demonstration. The original frozen benchmark results are separate from this qualitative run.
+## Paper material
 
-## Two views of the same recorded motion
-
-- `two-minute-continuous.mp4`: preserved original independent per-frame SMPL-H fit.
-- `two-minute-stable-anatomy.mp4`: temporal SMPL-H fitting with anatomical rotation bounds and outlier stabilization (archived preview).
-- `two-minute-regularized.mp4`: earlier temporal-only fit, retained as a separate visualization artifact.
-- `media-provenance.json`: prompts, seeds, command timing, checkpoint identity, processing settings and hashes for both views.
-
-Both videos depict the same 2,400 recorded source poses on the same 2,405-frame, 20 Hz wall-clock rendering grid. Native motion features, root trajectory, target order and command timing are unchanged. The page labels both views and preserves playback position when switching.
-
-The regularized fit uses fixed neutral body shape and fixed hand pose, 128-frame windows with a 96-frame stride, joint-acceleration weight 0.035 and body-pose acceleration weight 4e-6. Mean/P95 joint reconstruction errors are 1.60/3.38 cm. These are surface-fitting diagnostics, not motion-generation benchmark results. Neither view repairs source semantics, contacts or return boundaries.
-
-`motivation.webp` and `framework.webp` are the current manuscript figures. `supplementary.pdf` supplies derivations, execution details, additional controls and evidence scope. All pre-existing experiment numbers and original media are retained.
-
-That archived preview additionally bounds neck, knee, elbow and ankle rotations and holds unobserved distal head, wrist and toe rotations neutral. Seven isolated fitted outliers are replaced by bounded SO(3) interpolation from adjacent reliable fits; their source-frame indices are listed in the provenance. This is mesh visualization processing only.
-
-## Compound Chinese-instruction cases
-
-The additional SALAD demonstration uses 50 sampling steps and guidance 7.5. Chinese requests are accompanied by the actual English translations supplied to both generators; it is not a native Chinese-language evaluation. `compound-chinese-selected.mp4` is the first 25.05 seconds of a single four-command run, preserving two consecutive full targets without within-action cuts or speed changes. `compound-chinese-salad.mp4` retains the full recording, including subsequent candidates that were not selected as semantic showcase examples. `compound-provenance.json` records all four original instructions, timings, settings, selection and visualization processing. All four targets were delivered in the recorded run, but delivery does not establish that every requested subaction was followed accurately.
+- `motivation.webp`, `framework.webp`: Figures 1 and 2 of the manuscript.
+- `supplementary.pdf`: derivations, protocols, controls, failure taxonomy and demonstration records.

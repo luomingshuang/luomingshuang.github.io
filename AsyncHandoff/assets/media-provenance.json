@@ -276,5 +276,302 @@
   "native_motion_temporally_smoothed": false,
   "contact_repair": false,
   "visual_review": "Inspected action snapshots, all 12 entry boundaries and all 12 target-to-history return boundaries. No obvious gross body deformation was found in the inspected views; this is not an independent perceptual study.",
-  "renderer_camera": "Fixed orientation and scale, root-follow position; smooth vertex-normal shading; one neutral SMPL-H shape throughout."
+  "renderer_camera": "Fixed orientation and scale, root-follow position; smooth vertex-normal shading; one neutral SMPL-H shape throughout.",
+  "visualization_variants": {
+    "original": {
+      "file": "two-minute-continuous.mp4",
+      "processing": "Independent per-frame SMPL-H fitting; no temporal pose regularization",
+      "sha256": "6b04364440e9d88a2e41d1014d2611da72de82e0acc02fcc90121a9aa31f00a6"
+    },
+    "regularized": {
+      "file": "two-minute-regularized.mp4",
+      "processing": "Weak temporal joint/pose acceleration regularization in SMPL-H fitting only; native joint/features and clocks unchanged",
+      "sha256": "bd6bd25b398cd2d79909f0cf4225e316c2e40b49b7031390388d8a798af441fd",
+      "fit_receipt": {
+        "frames": 2400,
+        "visualization_only": true,
+        "source_motion_modified": false,
+        "root_translation_exact": true,
+        "temporal_joint_acceleration_weight": 0.035,
+        "temporal_pose_acceleration_weight": 1e-06,
+        "independent": {
+          "mean_error_m": 0.016501788049936295,
+          "p95_error_m": 0.03455396443605422,
+          "local_accel_rms_m": 0.007045589853078127
+        },
+        "regularized": {
+          "mean_error_m": 0.015968268737196922,
+          "p95_error_m": 0.03368822615593672,
+          "local_accel_rms_m": 0.00645735627040267
+        },
+        "mean_joint_fit_error_m": 0.015968268737196922,
+        "P95_joint_fit_error_m": 0.03368822615593672,
+        "no_contact_repair": true
+      },
+      "audit": {
+        "root_max_error_m": 4.76837158203125e-07,
+        "all_finite": true,
+        "mean_fit_joint_change_mm": 2.383089065551758,
+        "p95_fit_joint_change_mm": 9.001628875732422,
+        "worst_fit_change_frames": [
+          1383,
+          1391,
+          1384,
+          881,
+          1388,
+          879,
+          884,
+          893,
+          892,
+          882,
+          880,
+          883
+        ],
+        "commands": [
+          {
+            "command": 1,
+            "mean_surface_joint_change_mm": 1.1838322877883911,
+            "p95_surface_joint_change_mm": 3.7594797611236572,
+            "independent": {
+              "pelvis_height_range_m": 0.04989755153656006,
+              "left_wrist_relative_range_m": 0.6180688738822937,
+              "right_ankle_relative_range_m": 0.7681530714035034
+            },
+            "regularized": {
+              "pelvis_height_range_m": 0.04989755153656006,
+              "left_wrist_relative_range_m": 0.6180229187011719,
+              "right_ankle_relative_range_m": 0.767360508441925
+            },
+            "source": {
+              "pelvis_height_range_m": 0.04989755153656006,
+              "left_wrist_relative_range_m": 0.6261937618255615,
+              "right_ankle_relative_range_m": 0.7879155278205872
+            }
+          },
+          {
+            "command": 2,
+            "mean_surface_joint_change_mm": 3.7391152381896973,
+            "p95_surface_joint_change_mm": 13.41106128692627,
+            "independent": {
+              "pelvis_height_range_m": 0.4072307348251343,
+              "left_wrist_relative_range_m": 0.4837965965270996,
+              "right_ankle_relative_range_m": 0.4669657051563263
+            },
+            "regularized": {
+              "pelvis_height_range_m": 0.4072307348251343,
+              "left_wrist_relative_range_m": 0.4780068099498749,
+              "right_ankle_relative_range_m": 0.46529293060302734
+            },
+            "source": {
+              "pelvis_height_range_m": 0.4072307348251343,
+              "left_wrist_relative_range_m": 0.48131221532821655,
+              "right_ankle_relative_range_m": 0.4862416982650757
+            }
+          },
+          {
+            "command": 3,
+            "mean_surface_joint_change_mm": 2.029388666152954,
+            "p95_surface_joint_change_mm": 8.092705726623535,
+            "independent": {
+              "pelvis_height_range_m": 0.008456110954284668,
+              "left_wrist_relative_range_m": 0.8070625066757202,
+              "right_ankle_relative_range_m": 0.03442960977554321
+            },
+            "regularized": {
+              "pelvis_height_range_m": 0.008456110954284668,
+              "left_wrist_relative_range_m": 0.8014712929725647,
+              "right_ankle_relative_range_m": 0.03395354747772217
+            },
+            "source": {
+              "pelvis_height_range_m": 0.008456170558929443,
+              "left_wrist_relative_range_m": 0.8173965811729431,
+              "right_ankle_relative_range_m": 0.03562980517745018
+            }
+          },
+          {
+            "command": 4,
+            "mean_surface_joint_change_mm": 2.5767033100128174,
+            "p95_surface_joint_change_mm": 9.810526847839355,
+            "independent": {
+              "pelvis_height_range_m": 0.052839040756225586,
+              "left_wrist_relative_range_m": 0.29685288667678833,
+              "right_ankle_relative_range_m": 0.5762539505958557
+            },
+            "regularized": {
+              "pelvis_height_range_m": 0.052839040756225586,
+              "left_wrist_relative_range_m": 0.29415151476860046,
+              "right_ankle_relative_range_m": 0.5761258602142334
+            },
+            "source": {
+              "pelvis_height_range_m": 0.052839040756225586,
+              "left_wrist_relative_range_m": 0.30299103260040283,
+              "right_ankle_relative_range_m": 0.5991153120994568
+            }
+          },
+          {
+            "command": 5,
+            "mean_surface_joint_change_mm": 1.8188310861587524,
+            "p95_surface_joint_change_mm": 6.44518518447876,
+            "independent": {
+              "pelvis_height_range_m": 0.1574479341506958,
+              "left_wrist_relative_range_m": 0.6107549071311951,
+              "right_ankle_relative_range_m": 0.8427419066429138
+            },
+            "regularized": {
+              "pelvis_height_range_m": 0.1574479341506958,
+              "left_wrist_relative_range_m": 0.6106076836585999,
+              "right_ankle_relative_range_m": 0.8411930203437805
+            },
+            "source": {
+              "pelvis_height_range_m": 0.15744799375534058,
+              "left_wrist_relative_range_m": 0.6326924562454224,
+              "right_ankle_relative_range_m": 0.8690093159675598
+            }
+          },
+          {
+            "command": 6,
+            "mean_surface_joint_change_mm": 3.571882963180542,
+            "p95_surface_joint_change_mm": 10.661035537719727,
+            "independent": {
+              "pelvis_height_range_m": 0.08296442031860352,
+              "left_wrist_relative_range_m": 1.2038456201553345,
+              "right_ankle_relative_range_m": 1.48182213306427
+            },
+            "regularized": {
+              "pelvis_height_range_m": 0.08296442031860352,
+              "left_wrist_relative_range_m": 1.2060731649398804,
+              "right_ankle_relative_range_m": 1.4905381202697754
+            },
+            "source": {
+              "pelvis_height_range_m": 0.08296442031860352,
+              "left_wrist_relative_range_m": 1.2548458576202393,
+              "right_ankle_relative_range_m": 1.5985153913497925
+            }
+          },
+          {
+            "command": 7,
+            "mean_surface_joint_change_mm": 3.1522960662841797,
+            "p95_surface_joint_change_mm": 10.590083122253418,
+            "independent": {
+              "pelvis_height_range_m": 0.015900015830993652,
+              "left_wrist_relative_range_m": 0.2704771161079407,
+              "right_ankle_relative_range_m": 0.07411828637123108
+            },
+            "regularized": {
+              "pelvis_height_range_m": 0.015900015830993652,
+              "left_wrist_relative_range_m": 0.2735550105571747,
+              "right_ankle_relative_range_m": 0.07415365427732468
+            },
+            "source": {
+              "pelvis_height_range_m": 0.015899956226348877,
+              "left_wrist_relative_range_m": 0.3007984757423401,
+              "right_ankle_relative_range_m": 0.07387273013591766
+            }
+          },
+          {
+            "command": 8,
+            "mean_surface_joint_change_mm": 1.8132555484771729,
+            "p95_surface_joint_change_mm": 5.644323348999023,
+            "independent": {
+              "pelvis_height_range_m": 0.05715382099151611,
+              "left_wrist_relative_range_m": 0.3503386676311493,
+              "right_ankle_relative_range_m": 0.8289307355880737
+            },
+            "regularized": {
+              "pelvis_height_range_m": 0.05715382099151611,
+              "left_wrist_relative_range_m": 0.34968727827072144,
+              "right_ankle_relative_range_m": 0.8287882208824158
+            },
+            "source": {
+              "pelvis_height_range_m": 0.05715382099151611,
+              "left_wrist_relative_range_m": 0.35868585109710693,
+              "right_ankle_relative_range_m": 0.8589895367622375
+            }
+          },
+          {
+            "command": 9,
+            "mean_surface_joint_change_mm": 5.163930416107178,
+            "p95_surface_joint_change_mm": 18.446786880493164,
+            "independent": {
+              "pelvis_height_range_m": 0.6698577404022217,
+              "left_wrist_relative_range_m": 0.7822115421295166,
+              "right_ankle_relative_range_m": 0.7495497465133667
+            },
+            "regularized": {
+              "pelvis_height_range_m": 0.6698577404022217,
+              "left_wrist_relative_range_m": 0.7834400534629822,
+              "right_ankle_relative_range_m": 0.7595700621604919
+            },
+            "source": {
+              "pelvis_height_range_m": 0.6698577404022217,
+              "left_wrist_relative_range_m": 0.7994051575660706,
+              "right_ankle_relative_range_m": 0.7943978905677795
+            }
+          },
+          {
+            "command": 10,
+            "mean_surface_joint_change_mm": 2.759005308151245,
+            "p95_surface_joint_change_mm": 10.129749298095703,
+            "independent": {
+              "pelvis_height_range_m": 0.05979454517364502,
+              "left_wrist_relative_range_m": 0.6562209725379944,
+              "right_ankle_relative_range_m": 0.4908773899078369
+            },
+            "regularized": {
+              "pelvis_height_range_m": 0.05979454517364502,
+              "left_wrist_relative_range_m": 0.6552370190620422,
+              "right_ankle_relative_range_m": 0.4903307557106018
+            },
+            "source": {
+              "pelvis_height_range_m": 0.059794485569000244,
+              "left_wrist_relative_range_m": 0.6608371734619141,
+              "right_ankle_relative_range_m": 0.4908486306667328
+            }
+          },
+          {
+            "command": 11,
+            "mean_surface_joint_change_mm": 2.0684430599212646,
+            "p95_surface_joint_change_mm": 8.137818336486816,
+            "independent": {
+              "pelvis_height_range_m": 0.008456110954284668,
+              "left_wrist_relative_range_m": 0.8106380701065063,
+              "right_ankle_relative_range_m": 0.033540260046720505
+            },
+            "regularized": {
+              "pelvis_height_range_m": 0.008456110954284668,
+              "left_wrist_relative_range_m": 0.8050844669342041,
+              "right_ankle_relative_range_m": 0.033204834908246994
+            },
+            "source": {
+              "pelvis_height_range_m": 0.008456170558929443,
+              "left_wrist_relative_range_m": 0.8208677768707275,
+              "right_ankle_relative_range_m": 0.034701813012361526
+            }
+          },
+          {
+            "command": 12,
+            "mean_surface_joint_change_mm": 1.8914302587509155,
+            "p95_surface_joint_change_mm": 6.71597957611084,
+            "independent": {
+              "pelvis_height_range_m": 0.1574479341506958,
+              "left_wrist_relative_range_m": 0.6258090138435364,
+              "right_ankle_relative_range_m": 0.8376007080078125
+            },
+            "regularized": {
+              "pelvis_height_range_m": 0.1574479341506958,
+              "left_wrist_relative_range_m": 0.6262691617012024,
+              "right_ankle_relative_range_m": 0.8366711139678955
+            },
+            "source": {
+              "pelvis_height_range_m": 0.15744799375534058,
+              "left_wrist_relative_range_m": 0.6482089757919312,
+              "right_ankle_relative_range_m": 0.8640859127044678
+            }
+          }
+        ]
+      }
+    }
+  },
+  "default_visualization": "regularized",
+  "legacy_rendering_fields_scope": "rendering and surface_fitting above describe the preserved original independent fit; see visualization_variants for both views."
 }

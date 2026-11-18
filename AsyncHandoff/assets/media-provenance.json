@@ -1,0 +1,280 @@
+{
+  "scope": "Selected fresh qualitative demonstration, separate from all frozen full-test experiments",
+  "commands": [
+    {
+      "index": 0,
+      "text": "A person walks forward.",
+      "seed": 347000,
+      "issued_s": 0.0003152284771203995,
+      "generation_s": 0.25844259932637215,
+      "target_ready_s": 0.2589412610977888,
+      "first_target_s": 1.4155541397631168,
+      "final_target_s": 7.374256609007716,
+      "bridge_frames": 4,
+      "displayed_target_frames": 120,
+      "full_target": true,
+      "native_target_exact": true
+    },
+    {
+      "index": 1,
+      "text": "A person jumps forward once.",
+      "seed": 347001,
+      "issued_s": 8.192241789773107,
+      "generation_s": 0.26285975240170956,
+      "target_ready_s": 8.455740131437778,
+      "first_target_s": 10.02926012687385,
+      "final_target_s": 15.986268969252706,
+      "bridge_frames": 12,
+      "displayed_target_frames": 120,
+      "full_target": true,
+      "native_target_exact": true
+    },
+    {
+      "index": 2,
+      "text": "A person waves with the left hand.",
+      "seed": 347002,
+      "issued_s": 16.81495875865221,
+      "generation_s": 0.2559460699558258,
+      "target_ready_s": 17.071554332971573,
+      "first_target_s": 18.2441966496408,
+      "final_target_s": 24.201485941186547,
+      "bridge_frames": 4,
+      "displayed_target_frames": 120,
+      "full_target": true,
+      "native_target_exact": true
+    },
+    {
+      "index": 3,
+      "text": "A person walks backward.",
+      "seed": 347003,
+      "issued_s": 25.027379639446735,
+      "generation_s": 0.2594594433903694,
+      "target_ready_s": 25.287514148280025,
+      "first_target_s": 26.459110092371702,
+      "final_target_s": 32.41615628451109,
+      "bridge_frames": 4,
+      "displayed_target_frames": 120,
+      "full_target": true,
+      "native_target_exact": true
+    },
+    {
+      "index": 4,
+      "text": "A person jogs forward.",
+      "seed": 347008,
+      "issued_s": 33.243267983198166,
+      "generation_s": 0.25779656134545803,
+      "target_ready_s": 33.50170299038291,
+      "first_target_s": 34.67672203667462,
+      "final_target_s": 40.63352915644646,
+      "bridge_frames": 4,
+      "displayed_target_frames": 120,
+      "full_target": true,
+      "native_target_exact": true
+    },
+    {
+      "index": 5,
+      "text": "A person kicks forward with the right leg.",
+      "seed": 347009,
+      "issued_s": 41.46259487606585,
+      "generation_s": 0.25659336894750595,
+      "target_ready_s": 41.71976130641997,
+      "first_target_s": 42.988728776574135,
+      "final_target_s": 48.94556503370404,
+      "bridge_frames": 6,
+      "displayed_target_frames": 120,
+      "full_target": true,
+      "native_target_exact": true
+    },
+    {
+      "index": 6,
+      "text": "A person bows forward.",
+      "seed": 347010,
+      "issued_s": 49.76999157294631,
+      "generation_s": 0.26900642178952694,
+      "target_ready_s": 50.039706751704216,
+      "first_target_s": 51.30551914125681,
+      "final_target_s": 57.262664556503296,
+      "bridge_frames": 6,
+      "displayed_target_frames": 120,
+      "full_target": true,
+      "native_target_exact": true
+    },
+    {
+      "index": 7,
+      "text": "A person walks slowly.",
+      "seed": 347011,
+      "issued_s": 58.08409000560641,
+      "generation_s": 0.25813944824039936,
+      "target_ready_s": 58.3430470880121,
+      "first_target_s": 59.52172284014523,
+      "final_target_s": 65.4789440203458,
+      "bridge_frames": 4,
+      "displayed_target_frames": 120,
+      "full_target": true,
+      "native_target_exact": true
+    },
+    {
+      "index": 8,
+      "text": "A person squats down and stands up.",
+      "seed": 347005,
+      "issued_s": 66.30613347142935,
+      "generation_s": 0.26571050472557545,
+      "target_ready_s": 66.57270476408303,
+      "first_target_s": 67.7460908293724,
+      "final_target_s": 73.70314668677747,
+      "bridge_frames": 4,
+      "displayed_target_frames": 120,
+      "full_target": true,
+      "native_target_exact": true
+    },
+    {
+      "index": 9,
+      "text": "A person turns around.",
+      "seed": 347007,
+      "issued_s": 74.52534787170589,
+      "generation_s": 0.2572534028440714,
+      "target_ready_s": 74.78347476013005,
+      "first_target_s": 76.05865624919534,
+      "final_target_s": 82.0162527821958,
+      "bridge_frames": 6,
+      "displayed_target_frames": 120,
+      "full_target": true,
+      "native_target_exact": true
+    },
+    {
+      "index": 10,
+      "text": "A person waves with the left hand.",
+      "seed": 347002,
+      "issued_s": 82.84548397175968,
+      "generation_s": 0.26615809462964535,
+      "target_ready_s": 83.11259486339986,
+      "first_target_s": 84.26928441599011,
+      "final_target_s": 90.22646441683173,
+      "bridge_frames": 4,
+      "displayed_target_frames": 120,
+      "full_target": true,
+      "native_target_exact": true
+    },
+    {
+      "index": 11,
+      "text": "A person jogs forward.",
+      "seed": 347008,
+      "issued_s": 91.06110653467476,
+      "generation_s": 0.2597715426236391,
+      "target_ready_s": 91.3218175265938,
+      "first_target_s": 92.49044814519584,
+      "final_target_s": 98.44749337248504,
+      "bridge_frames": 4,
+      "displayed_target_frames": 120,
+      "full_target": true,
+      "native_target_exact": true
+    }
+  ],
+  "configuration": {
+    "duration_s": 120,
+    "fps": 20,
+    "persistent_player": true,
+    "target_frames": 120,
+    "checkpoint_sha256": "c49b0d746f61173f14299a873ac5aa9cbe4f962574defa2e12b8f2babca81a20",
+    "selected_prompts_and_seeds_from_earlier_qualitative_candidates": true,
+    "fresh_generation": true,
+    "postroll_frames": 16,
+    "response_packet_frames": 8,
+    "prefill_frames": 16,
+    "observe_entry_compute_only": true,
+    "unrelated_provider_warmup": true,
+    "final_postroll_prefetch_floor": 64,
+    "no_frozen_experiments_modified": true
+  },
+  "all_targets_full": true,
+  "unserved_s": 0.0,
+  "persistent_player": true,
+  "player_resets": 0,
+  "cached_targets": false,
+  "replayed_readiness": false,
+  "actual_player_records": 2400,
+  "actual_duration_s": 120.18310579098761,
+  "rendering": {
+    "video": "two-minute-continuous.mp4",
+    "frames": 2405,
+    "fps": 20,
+    "duration_s": 120.25,
+    "sha256": "6b04364440e9d88a2e41d1014d2611da72de82e0acc02fcc90121a9aa31f00a6",
+    "original_timing": "Each rendering frame shows the most recent actually played frame on a uniform 20 Hz wall grid; no interpolation or speedup.",
+    "persistent_player": true,
+    "commands": [
+      {
+        "text": "A person walks forward.",
+        "start_frame": 1
+      },
+      {
+        "text": "A person jumps forward once.",
+        "start_frame": 164
+      },
+      {
+        "text": "A person waves with the left hand.",
+        "start_frame": 337
+      },
+      {
+        "text": "A person walks backward.",
+        "start_frame": 501
+      },
+      {
+        "text": "A person jogs forward.",
+        "start_frame": 665
+      },
+      {
+        "text": "A person kicks forward with the right leg.",
+        "start_frame": 830
+      },
+      {
+        "text": "A person bows forward.",
+        "start_frame": 996
+      },
+      {
+        "text": "A person walks slowly.",
+        "start_frame": 1162
+      },
+      {
+        "text": "A person squats down and stands up.",
+        "start_frame": 1327
+      },
+      {
+        "text": "A person turns around.",
+        "start_frame": 1491
+      },
+      {
+        "text": "A person waves with the left hand.",
+        "start_frame": 1657
+      },
+      {
+        "text": "A person jogs forward.",
+        "start_frame": 1822
+      }
+    ],
+    "raw_actual_duration_s": 120.18310579098761,
+    "surface": {
+      "mean_joint_fit_error_m": 0.016501786187291145,
+      "P95_joint_fit_error_m": 0.03454968277364968,
+      "no_temporal_smoothing": true,
+      "no_contact_repair": true,
+      "frames": 2400
+    },
+    "all_targets_full": true,
+    "unserved_s": 0.0,
+    "phase_annotation": "FD packets after the current target has completed are tagged as history continuation, including final postroll."
+  },
+  "surface_fitting": {
+    "mean_joint_fit_error_m": 0.016501786187291145,
+    "P95_joint_fit_error_m": 0.03454968277364968,
+    "no_temporal_smoothing": true,
+    "no_contact_repair": true,
+    "frames": 2400
+  },
+  "selection": "Prompts and seeds selected from earlier inspected qualitative candidates. Independent deployment preflights retained; final trace uses one persistent player with final history-prefetch enabled. This is not a random test cohort or a new aggregate evaluation.",
+  "raw_sha256": "63ec70a0b994aa95f3c14a3371b533256df92b0de219d3b056adcf0dab482621",
+  "native_motion_temporally_smoothed": false,
+  "contact_repair": false,
+  "visual_review": "Inspected action snapshots, all 12 entry boundaries and all 12 target-to-history return boundaries. No obvious gross body deformation was found in the inspected views; this is not an independent perceptual study.",
+  "renderer_camera": "Fixed orientation and scale, root-follow position; smooth vertex-normal shading; one neutral SMPL-H shape throughout."
+}

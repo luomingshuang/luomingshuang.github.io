@@ -1,0 +1,566 @@
+{
+  "scope": "New qualitative candidate outcomes only, separate from all frozen benchmark cohorts. All failed and unselected completed candidates are retained here; raw generation records remain archived on the source host.",
+  "selection_note": "Complete delivery alone does not establish semantic or perceptual quality. New demonstration controller settings and display retargeting are recorded per selected case. Earlier superseded six-command/196-frame candidates are included.",
+  "candidates": [
+    {
+      "directory": "research_v354_five_salad_minutes/case01",
+      "provider": "SALAD",
+      "commands_issued": 4,
+      "full_target_count": 2,
+      "all_issued_targets_full": false,
+      "registered_commands": 4,
+      "unserved_s": 2.6500000000000004,
+      "selected": false
+    },
+    {
+      "directory": "research_v354_five_salad_minutes/case01_retry1",
+      "provider": "SALAD",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 0.0,
+      "selected": true
+    },
+    {
+      "directory": "research_v354_five_salad_minutes/case02",
+      "provider": "SALAD",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 9.600000000000001,
+      "selected": false
+    },
+    {
+      "directory": "research_v354_five_salad_minutes/case02_retry1",
+      "provider": "SALAD",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 0.0,
+      "selected": true
+    },
+    {
+      "directory": "research_v354_five_salad_minutes/case03",
+      "provider": "SALAD",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 0.0,
+      "selected": true
+    },
+    {
+      "directory": "research_v354_five_salad_minutes/case04",
+      "provider": "SALAD",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 10.200000000000001,
+      "selected": false
+    },
+    {
+      "directory": "research_v354_five_salad_minutes/case04_retry1",
+      "provider": "SALAD",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 1.6500000000000001,
+      "selected": false
+    },
+    {
+      "directory": "research_v354_five_salad_minutes/case04_retry2",
+      "provider": "SALAD",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 3.1,
+      "selected": false
+    },
+    {
+      "directory": "research_v354_five_salad_minutes/case04_retry3",
+      "provider": "SALAD",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 0.0,
+      "selected": true
+    },
+    {
+      "directory": "research_v354_five_salad_minutes/case05",
+      "provider": "SALAD",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 2.35,
+      "selected": false
+    },
+    {
+      "directory": "research_v354_five_salad_minutes/case05_buffered1",
+      "provider": "SALAD",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 7.1000000000000005,
+      "selected": false
+    },
+    {
+      "directory": "research_v354_five_salad_minutes/case05_buffered2",
+      "provider": "SALAD",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 1.7000000000000002,
+      "selected": false
+    },
+    {
+      "directory": "research_v354_five_salad_minutes/case05_buffered3",
+      "provider": "SALAD",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 4.7,
+      "selected": false
+    },
+    {
+      "directory": "research_v354_five_salad_minutes/case05_retry1",
+      "provider": "SALAD",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 9.0,
+      "selected": false
+    },
+    {
+      "directory": "research_v354_five_salad_minutes/case05_retry2",
+      "provider": "SALAD",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 1.6,
+      "selected": false
+    },
+    {
+      "directory": "research_v354_five_salad_minutes/case05_retry3",
+      "provider": "SALAD",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 7.7,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motiongpt3/case01_attempt1",
+      "provider": "motiongpt3",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 0.0,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motiongpt3/case02_attempt1",
+      "provider": "motiongpt3",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 2.0,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motiongpt3/case02_attempt2",
+      "provider": "motiongpt3",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 0.0,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motiongpt3/case03_attempt1",
+      "provider": "motiongpt3",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 0.0,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motiongpt3/case04_attempt1",
+      "provider": "motiongpt3",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 0.0,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motiongpt3/case05_attempt1",
+      "provider": "motiongpt3",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 0.0,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motionhiflow/case01_attempt1",
+      "provider": "motionhiflow",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 1.35,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motionhiflow/case01_attempt2",
+      "provider": "motionhiflow",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 0.0,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motionhiflow/case02_attempt1",
+      "provider": "motionhiflow",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 0.0,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motionhiflow/case03_attempt1",
+      "provider": "motionhiflow",
+      "commands_issued": 4,
+      "full_target_count": 3,
+      "all_issued_targets_full": false,
+      "registered_commands": 4,
+      "unserved_s": 5.550000000000001,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motionhiflow/case03_attempt10",
+      "provider": "motionhiflow",
+      "commands_issued": 2,
+      "full_target_count": 1,
+      "all_issued_targets_full": false,
+      "registered_commands": 4,
+      "unserved_s": 31.200000000000003,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motionhiflow/case03_attempt11",
+      "provider": "motionhiflow",
+      "commands_issued": 2,
+      "full_target_count": 1,
+      "all_issued_targets_full": false,
+      "registered_commands": 4,
+      "unserved_s": 30.8,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motionhiflow/case03_attempt2",
+      "provider": "motionhiflow",
+      "commands_issued": 4,
+      "full_target_count": 3,
+      "all_issued_targets_full": false,
+      "registered_commands": 4,
+      "unserved_s": 3.85,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motionhiflow/case03_attempt3",
+      "provider": "motionhiflow",
+      "commands_issued": 4,
+      "full_target_count": 2,
+      "all_issued_targets_full": false,
+      "registered_commands": 4,
+      "unserved_s": 10.700000000000001,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motionhiflow/case03_attempt4",
+      "provider": "motionhiflow",
+      "commands_issued": 4,
+      "full_target_count": 2,
+      "all_issued_targets_full": false,
+      "registered_commands": 4,
+      "unserved_s": 18.25,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motionhiflow/case03_attempt5",
+      "provider": "motionhiflow",
+      "commands_issued": 4,
+      "full_target_count": 3,
+      "all_issued_targets_full": false,
+      "registered_commands": 4,
+      "unserved_s": 6.1000000000000005,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motionhiflow/case03_attempt6",
+      "provider": "motionhiflow",
+      "commands_issued": 2,
+      "full_target_count": 1,
+      "all_issued_targets_full": false,
+      "registered_commands": 4,
+      "unserved_s": 32.4,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motionhiflow/case03_attempt7",
+      "provider": "motionhiflow",
+      "commands_issued": 2,
+      "full_target_count": 1,
+      "all_issued_targets_full": false,
+      "registered_commands": 4,
+      "unserved_s": 31.75,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motionhiflow/case03_attempt8",
+      "provider": "motionhiflow",
+      "commands_issued": 2,
+      "full_target_count": 1,
+      "all_issued_targets_full": false,
+      "registered_commands": 4,
+      "unserved_s": 32.050000000000004,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/motionhiflow/case03_attempt9",
+      "provider": "motionhiflow",
+      "commands_issued": 2,
+      "full_target_count": 1,
+      "all_issued_targets_full": false,
+      "registered_commands": 4,
+      "unserved_s": 31.700000000000003,
+      "selected": false
+    },
+    {
+      "directory": "research_v355_fifteen_provider_minutes/salad/case05_attempt1",
+      "provider": "salad",
+      "commands_issued": 4,
+      "full_target_count": 4,
+      "all_issued_targets_full": true,
+      "registered_commands": 4,
+      "unserved_s": 0.0,
+      "selected": true
+    },
+    {
+      "directory": "research_v356_gpt3_semantic_minutes/motiongpt3/case01_attempt1",
+      "provider": "motiongpt3",
+      "commands_issued": 2,
+      "full_target_count": 1,
+      "all_issued_targets_full": false,
+      "registered_commands": 6,
+      "unserved_s": 47.050000000000004,
+      "selected": false
+    },
+    {
+      "directory": "research_v356_gpt3_semantic_minutes/motiongpt3/case01_attempt2",
+      "provider": "motiongpt3",
+      "commands_issued": 6,
+      "full_target_count": 6,
+      "all_issued_targets_full": true,
+      "registered_commands": 6,
+      "unserved_s": 1.5,
+      "selected": false
+    },
+    {
+      "directory": "research_v356_gpt3_semantic_minutes/motiongpt3/case01_attempt3",
+      "provider": "motiongpt3",
+      "commands_issued": 6,
+      "full_target_count": 5,
+      "all_issued_targets_full": false,
+      "registered_commands": 6,
+      "unserved_s": 0.0,
+      "selected": false
+    },
+    {
+      "directory": "research_v356_gpt3_semantic_minutes/motiongpt3/case01_attempt4",
+      "provider": "motiongpt3",
+      "commands_issued": 6,
+      "full_target_count": 5,
+      "all_issued_targets_full": false,
+      "registered_commands": 6,
+      "unserved_s": 0.0,
+      "selected": false
+    },
+    {
+      "directory": "research_v356_gpt3_semantic_minutes/motiongpt3/case01_attempt5",
+      "provider": "motiongpt3",
+      "commands_issued": 5,
+      "full_target_count": 5,
+      "all_issued_targets_full": true,
+      "registered_commands": 5,
+      "unserved_s": 0.0,
+      "selected": true
+    },
+    {
+      "directory": "research_v356_gpt3_semantic_minutes/motiongpt3/case02_attempt3",
+      "provider": "motiongpt3",
+      "commands_issued": 5,
+      "full_target_count": 5,
+      "all_issued_targets_full": true,
+      "registered_commands": 5,
+      "unserved_s": 0.0,
+      "selected": true
+    },
+    {
+      "directory": "research_v356_gpt3_semantic_minutes/motiongpt3/case03_attempt3",
+      "provider": "motiongpt3",
+      "commands_issued": 5,
+      "full_target_count": 5,
+      "all_issued_targets_full": true,
+      "registered_commands": 5,
+      "unserved_s": 0.0,
+      "selected": true
+    },
+    {
+      "directory": "research_v356_gpt3_semantic_minutes/motiongpt3/case04_attempt3",
+      "provider": "motiongpt3",
+      "commands_issued": 5,
+      "full_target_count": 5,
+      "all_issued_targets_full": true,
+      "registered_commands": 5,
+      "unserved_s": 0.0,
+      "selected": true
+    },
+    {
+      "directory": "research_v356_gpt3_semantic_minutes/motiongpt3/case05_attempt3",
+      "provider": "motiongpt3",
+      "commands_issued": 5,
+      "full_target_count": 5,
+      "all_issued_targets_full": true,
+      "registered_commands": 5,
+      "unserved_s": 0.0,
+      "selected": true
+    },
+    {
+      "directory": "research_v357_hiflow_semantic_minutes/motionhiflow/case01_attempt1",
+      "provider": "motionhiflow",
+      "commands_issued": 6,
+      "full_target_count": 5,
+      "all_issued_targets_full": false,
+      "registered_commands": 6,
+      "unserved_s": 0.0,
+      "selected": false
+    },
+    {
+      "directory": "research_v357_hiflow_semantic_minutes/motionhiflow/case01_attempt2",
+      "provider": "motionhiflow",
+      "commands_issued": 6,
+      "full_target_count": 5,
+      "all_issued_targets_full": false,
+      "registered_commands": 6,
+      "unserved_s": 0.0,
+      "selected": false
+    },
+    {
+      "directory": "research_v357_hiflow_semantic_minutes/motionhiflow/case01_attempt3",
+      "provider": "motionhiflow",
+      "commands_issued": 5,
+      "full_target_count": 4,
+      "all_issued_targets_full": false,
+      "registered_commands": 5,
+      "unserved_s": 0.0,
+      "selected": false
+    },
+    {
+      "directory": "research_v357_hiflow_semantic_minutes/motionhiflow/case01_attempt4",
+      "provider": "motionhiflow",
+      "commands_issued": 5,
+      "full_target_count": 4,
+      "all_issued_targets_full": false,
+      "registered_commands": 5,
+      "unserved_s": 0.0,
+      "selected": false
+    },
+    {
+      "directory": "research_v357_hiflow_semantic_minutes/motionhiflow/case01_attempt5",
+      "provider": "motionhiflow",
+      "commands_issued": 5,
+      "full_target_count": 4,
+      "all_issued_targets_full": false,
+      "registered_commands": 5,
+      "unserved_s": 0.0,
+      "selected": false
+    },
+    {
+      "directory": "research_v357_hiflow_semantic_minutes/motionhiflow/case01_attempt6",
+      "provider": "motionhiflow",
+      "commands_issued": 5,
+      "full_target_count": 5,
+      "all_issued_targets_full": true,
+      "registered_commands": 5,
+      "unserved_s": 0.0,
+      "selected": true
+    },
+    {
+      "directory": "research_v357_hiflow_semantic_minutes/motionhiflow/case02_attempt6",
+      "provider": "motionhiflow",
+      "commands_issued": 5,
+      "full_target_count": 5,
+      "all_issued_targets_full": true,
+      "registered_commands": 5,
+      "unserved_s": 0.0,
+      "selected": true
+    },
+    {
+      "directory": "research_v357_hiflow_semantic_minutes/motionhiflow/case03_attempt6",
+      "provider": "motionhiflow",
+      "commands_issued": 5,
+      "full_target_count": 5,
+      "all_issued_targets_full": true,
+      "registered_commands": 5,
+      "unserved_s": 0.0,
+      "selected": true
+    },
+    {
+      "directory": "research_v357_hiflow_semantic_minutes/motionhiflow/case04_attempt6",
+      "provider": "motionhiflow",
+      "commands_issued": 5,
+      "full_target_count": 5,
+      "all_issued_targets_full": true,
+      "registered_commands": 5,
+      "unserved_s": 0.0,
+      "selected": true
+    },
+    {
+      "directory": "research_v357_hiflow_semantic_minutes/motionhiflow/case05_attempt6",
+      "provider": "motionhiflow",
+      "commands_issued": 5,
+      "full_target_count": 5,
+      "all_issued_targets_full": true,
+      "registered_commands": 5,
+      "unserved_s": 0.0,
+      "selected": true
+    }
+  ]
+}

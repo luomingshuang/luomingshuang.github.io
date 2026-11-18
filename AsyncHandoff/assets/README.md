@@ -1,11 +1,29 @@
 # Project media
 
+## Current continuous-motion gallery
+
+The current gallery contains **15 selected 60-second recordings**: five each from SALAD, MotionHiFlow and MotionGPT3. Each recording uses one persistent player and successive instructions. Chinese requests are accompanied by the English prompts actually supplied to the models.
+
+- `fifteen-motion-studies.json`: all selected cases, instructions, timing and hashes.
+- `<provider>-minute-<id>.mp4`: complete 60-second visualization.
+- `<provider>-minute-<id>-raw.zip`: original native motion, target arrays and timing records.
+- `<provider>-minute-<id>-provenance.json`: effective demo configuration, display processing and review.
+- `candidate-outcomes.json` and `demo-candidate-records.zip`: completed unsuccessful and unselected candidate outcomes.
+- `display-reconstruction-source.zip`: exact reconstruction/rendering source, with original host paths retained.
+
+The display uses anatomical SMPL-H retargeting, temporal filtering and two-bone foot-clearance IK. This prevents reconstruction artifacts from being mistaken for the generated skeleton. It is display postprocessing, **not a measurement of unprocessed motion quality**. Native target features and their frame order are unchanged in the raw records. Selected qualitative controller settings are recorded separately from all frozen benchmark experiments. The cases are independent examples, not a matched comparison of the providers or a native Chinese-language benchmark.
+
+## Archived visualizations
+
+Earlier previews below are retained for traceability and are not the current gallery. Their historical diagnostic values refer to those particular fits.
+
+
 Paper figures and supplementary material accompany a selected continuous multi-instruction demonstration. The original frozen benchmark results are separate from this qualitative run.
 
 ## Two views of the same recorded motion
 
 - `two-minute-continuous.mp4`: preserved original independent per-frame SMPL-H fit.
-- `two-minute-stable-anatomy.mp4`: temporal SMPL-H fitting with anatomical rotation bounds and outlier stabilization (current default).
+- `two-minute-stable-anatomy.mp4`: temporal SMPL-H fitting with anatomical rotation bounds and outlier stabilization (archived preview).
 - `two-minute-regularized.mp4`: earlier temporal-only fit, retained as a separate visualization artifact.
 - `media-provenance.json`: prompts, seeds, command timing, checkpoint identity, processing settings and hashes for both views.
 
@@ -15,7 +33,7 @@ The regularized fit uses fixed neutral body shape and fixed hand pose, 128-frame
 
 `motivation.webp` and `framework.webp` are the current manuscript figures. `supplementary.pdf` supplies derivations, execution details, additional controls and evidence scope. All pre-existing experiment numbers and original media are retained.
 
-The default additionally bounds neck, knee, elbow and ankle rotations and holds unobserved distal head, wrist and toe rotations neutral. Seven isolated fitted outliers are replaced by bounded SO(3) interpolation from adjacent reliable fits; their source-frame indices are listed in the provenance. This is mesh visualization processing only.
+That archived preview additionally bounds neck, knee, elbow and ankle rotations and holds unobserved distal head, wrist and toe rotations neutral. Seven isolated fitted outliers are replaced by bounded SO(3) interpolation from adjacent reliable fits; their source-frame indices are listed in the provenance. This is mesh visualization processing only.
 
 ## Compound Chinese-instruction cases
 

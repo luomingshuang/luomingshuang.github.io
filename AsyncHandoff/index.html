@@ -279,7 +279,7 @@ dialog button{position:absolute;right:10px;top:10px;width:36px;height:36px;borde
 <nav id="nav" aria-label="Main navigation"><div class="wrap nav">
   <a class="brand" href="#top"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>AsyncHandoff</a>
   <div class="navlinks">
-    <a href="#demos">Demos</a><a href="#motivation">Motivation</a><a href="#method">Method</a><a href="#results">Results</a><a href="#rendering">Rendering</a><a href="#resources">Resources</a>
+    <a href="#demos">Demos</a><a href="#motivation">Motivation</a><a href="#method">Method</a><a href="#results">Results</a><a href="#resources">Resources</a>
   </div>
   <div class="navcta">
     <a class="pill" href="assets/supplementary.pdf"><svg><use href="#i-doc"/></svg>Supplement</a>
@@ -364,7 +364,7 @@ dialog button{position:absolute;right:10px;top:10px;width:36px;height:36px;borde
       <div class="dl"><a id="dl-video" download>Video ↓</a><a id="dl-raw">Native motion record ↓</a><a id="dl-prov">Configuration &amp; provenance ↓</a></div>
     </aside>
   </div>
-  <p class="note">Chinese requests are shown with the English translations actually supplied to the generators. Videos show the postprocessed reconstruction (de-jittering and anatomical IK, see <a href="#rendering">Rendering</a>); the native motion and exact timing are in each download. Recordings were selected from 56 completed runs; all unselected outcomes are listed in <a href="assets/candidate-outcomes.json">candidate-outcomes.json</a>. They are qualitative examples, separate from the frozen benchmark and not a matched comparison of providers.</p>
+  <p class="note">Chinese requests are shown with the English translations actually supplied to the generators. Videos show the postprocessed reconstruction (de-jittering and anatomical IK); the native motion and exact timing are in each download. Recordings were selected from 56 completed runs; all unselected outcomes are listed in <a href="assets/candidate-outcomes.json">candidate-outcomes.json</a>. They are qualitative examples, separate from the frozen benchmark and not a matched comparison of providers.</p>
 </section>
 
 <!-- ======================= MOTIVATION ======================= -->
@@ -464,32 +464,11 @@ dialog button{position:absolute;right:10px;top:10px;width:36px;height:36px;borde
 </section>
 
 <!-- ======================= RENDERING ======================= -->
-<section id="rendering" class="wrap">
-  <div class="kicker"><span class="n">05</span>Rendering</div>
-  <h2>De-jittering and IK, after generation.</h2>
-  <p class="lead">Every video on this page is rendered from a postprocessed reconstruction of the displayed motion. The same output stage ships with the code and is on by default; it never feeds back into the model.</p>
-  <div class="pipe">
-    <div class="io"><span class="k">input</span><b>Displayed motion</b><span>22 joints, 20 Hz, original timestamps</span></div>
-    <div><span class="k">01</span><b>De-jitter</b><span>Savitzky–Golay filter, window 7, order 2</span></div>
-    <div><span class="k">02</span><b>Rotations</b><span>Twist-resolved local frames; bounded SMPL-H limb fit (≤ 0.12 rad)</span></div>
-    <div><span class="k">03</span><b>SO(3) smoothing</b><span>7-tap relative-rotation filter, two passes</span></div>
-    <div><span class="k">04</span><b>Anatomy</b><span>Neck/ankle cones; hinge knees and elbows; neutral head, wrists, fingers</span></div>
-    <div><span class="k">05</span><b>Leg IK + floor</b><span>Two-bone IK to source ankles, then residual floor clearance; fresh skinning</span></div>
-  </div>
-  <div class="scope">
-    <div><h3>What it changes</h3><p>Only the rendered reconstruction: joint jitter, rotational noise, implausible joint limits and floor penetration in the display.</p></div>
-    <div><h3>What it keeps</h3><p>Native 263-D features, every target frame and its order, frame ownership and player timestamps. Mean display deviation from source joints is 3.8–4.3 cm per provider.</p></div>
-    <div><h3>What it is not</h3><p>Not part of any reported metric, not a zero-lookahead online filter, and not a foot-locking or physics solver.</p></div>
-  </div>
-<pre><span class="c"># Processed output is exported next to the native record by default</span>
-python -m asynchandoff.playback --target target.npy --text "Jump forward once." \
-    --checkpoint checkpoints/base_connector.pt --output runs/demo/playback.npz
-<span class="c"># → playback.npz (native)  +  playback.processed.npz / .json (de-jittered + IK)</span></pre>
-</section>
+
 
 <!-- ======================= RESOURCES ======================= -->
 <section id="resources" class="wrap">
-  <div class="kicker"><span class="n">06</span>Resources</div>
+  <div class="kicker"><span class="n">05</span>Resources</div>
   <h2>Everything to reproduce and inspect.</h2>
   <div class="rgrid">
     <a class="rcard" href="https://github.com/luomingshuang/Asynchandoff-2026-streaming-t2m"><div class="ic"><svg><use href="#i-gh"/></svg></div><strong>Code</strong><span>Connector, queue/player, training, inference and evaluation.</span><em>GitHub ↗</em></a>
